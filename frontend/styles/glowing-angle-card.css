@@ -1,9 +1,141 @@
+:root {
+    --color-grey-dark: rgba(31,31,31,255);
+    --color-black-dark: rgba(10,10,10,255);
+    --color-black-medium: rgba(26,26,26,255);
+    --color-white: rgba(255,255,255,255);
+    --color-red-standard: rgba(158,34,34,255);
+    --color-purple-standard: rgba(160,100,187,255);
+    --color-blue-standard: rgba(60,100,187,255);
+    --color-grey-standard: rgba(202, 202, 202,255);
+}
+
+body{
+    display: grid;
+    align-items: center;
+    
+}
+
+
 section {
-    background-color: aliceblue;
+    background-color: var(--color-black-medium);
+    height: 90vh;
+    border-radius: 10px;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
 }
+
 h2 {
-    color: blueviolet;
+    color: var(--color-purple-standard);
+    text-align: center;
 }
-.card-title {
-    color: firebrick;
+
+.blue-div, .red-div {
+    height: 30vh;
+    width: 20vh;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    background-color: var(--color-black-dark);
+    background-position: center;
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+}
+.blue-div:hover,
+.red-div:hover{
+    background-position: 80%;
+    transform:  rotateY(20deg) rotateX(5deg);
+    
+}
+.blue-div {
+    
+    box-shadow: 0 0 10px 5px var(--color-blue-standard),       /*Meaning Box-Shadow Values: */
+                0 0 20px 5px var(--color-blue-standard),       /*offset-x offset-y blur-radius spread-radius color;*/
+                0 0 40px 5px var(--color-blue-standard);
+}
+.red-div {
+    box-shadow: 0 0 10px 5px var(--color-red-standard),
+                0 0 20px 5px var(--color-red-standard),
+                0 0 40px 5px var(--color-red-standard);
+}
+
+.blue-date-div,
+.red-date-div {
+    position: fixed;
+    margin-left: 2vh;
+    margin-top: 6.5vh;
+    background-color: var(--color-black-dark);
+    width: 5vh;
+    height: 5vh;
+    border-radius: 5px;
+    overflow: hidden;
+    justify-items: center;
+    
+}
+.blue-date-div:hover,
+.red-date-div:hover {
+    cursor: pointer;
+}
+.blue-date-div {
+    box-shadow: 0 0 10px 5px rgb(60, 100, 187);
+}
+.red-date-div {
+    box-shadow: 0 0 10px 5px var(--color-red-standard);
+}
+.month-text {
+    color: var(--color-white);
+    margin-bottom: 0%;
+    font-family: sans-serif;
+}
+.blue-day-number, .red-day-number {
+    color: var(--color-white);
+    margin-top: 0%;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.blue-day-number {
+    color: var(--color-blue-standard);
+}
+.red-day-number {
+    color: var(--color-red-standard)
+}
+
+img {
+    height: 30%;
+    width: 100%;
+    object-fit: cover;
+    border-top: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-left: 2vh;
+    padding-top: 10%;
+    color: var(--color-white);
+}
+
+.card-text {
+    margin: 5%;
+    color: var(--color-grey-standard);
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.blue-link, .red-link {
+    margin-left: 2vh;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+.blue-link {
+    color: var(--color-blue-standard);
+}
+.red-link { 
+    color: var(--color-red-standard);
 }
