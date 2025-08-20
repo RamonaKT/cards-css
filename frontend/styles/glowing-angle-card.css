@@ -46,7 +46,7 @@ h2 {
 .blue-div:hover,
 .red-div:hover{
     background-position: 80%;
-    transform:  rotateY(20deg) rotateX(5deg);
+    transform:  rotateY(30deg) rotateX(5deg);
     
 }
 .blue-div {
@@ -72,11 +72,14 @@ h2 {
     border-radius: 5px;
     overflow: hidden;
     justify-items: center;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
     
 }
 .blue-date-div:hover,
 .red-date-div:hover {
     cursor: pointer;
+    transform: translateX(2vh) translateY(-0.5vh) translateZ(3vh);
 }
 .blue-date-div {
     box-shadow: 0 0 10px 5px rgb(60, 100, 187);
@@ -112,11 +115,13 @@ img {
 
 h3 {
     font-size: 1.5rem;
+    font-family: sans-serif;
     margin-left: 2vh;
     padding-top: 10%;
     color: var(--color-white);
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
 }
-
 .card-text {
     margin: 5%;
     color: var(--color-grey-standard);
@@ -124,14 +129,24 @@ h3 {
     font-size: 0.9rem;
     margin-left: 2vh;
     margin-right: 2vh;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+.card-text:hover,
+h3:hover {
+    cursor: pointer;
+    transform: translateX(2vh) translateY(-0.5vh) translateZ(3vh);
 }
 
-.blue-link, .red-link {
+.blue-link, 
+.red-link {
     margin-left: 2vh;
     text-decoration: none;
     font-family: sans-serif;
     font-weight: bolder;
     font-size: 1.1rem;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
 }
 .blue-link {
     color: var(--color-blue-standard);
