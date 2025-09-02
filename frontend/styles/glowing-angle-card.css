@@ -7,19 +7,29 @@
     --color-purple-standard: rgba(160,100,187,255);
     --color-blue-standard: rgba(60,100,187,255);
     --color-grey-standard: rgba(202, 202, 202,255);
+
+    --font-size-huge: 1.3rem;
+    --font-size-large: 1.1rem;
+    --font-size-mid: 0.8rem;
+    --font-size-small: 0.6rem;
+
+    --font-family: sans-serif;
+
 }
 
 body{
     display: grid;
     align-items: center;
+    background-color: var(--color-black-medium);
+    font-family: var(--font-family)
     
 }
 
 
-section {
+.main-section {
     background-color: var(--color-black-medium);
-    height: 50rem;
     border-radius: 10px;
+    margin-top: 10%;
     display: flex;
     gap: 5%;
     justify-content: center;
@@ -28,8 +38,9 @@ section {
 }
 
 h2 {
-    color: var(--color-purple-standard);
+    color: var(--color-black-medium);
     text-align: center;
+    font-size: var(--font-size-huge);
 }
 
 .blue-div, .red-div {
@@ -91,14 +102,12 @@ h2 {
 .month-text {
     color: var(--color-white);
     margin: 0%;
-    font-family: sans-serif;
-    font-size: 0.8rem;
+    font-size: var(--font-size-mid);
 }
 .blue-day-number, .red-day-number {
     color: var(--color-white);
     margin-top: 0%;
-    font-family: sans-serif;
-    font-size: 1.3rem;
+    font-size: var(--font-size-huge);
     font-weight: bold;
 }
 .blue-day-number {
@@ -116,8 +125,7 @@ img {
 }
 
 h3 {
-    font-size: 1.1rem;
-    font-family: sans-serif;
+    font-size: var(--font-size-large);
     margin-left: 1rem;
     padding-top: 15%;
     margin-bottom: 0%;
@@ -125,10 +133,14 @@ h3 {
     transform-style: preserve-3d;
     transition: transform 0.3s ease;
 }
+.card-text-section{
+    height: 4rem;
+    overflow: hidden;
+    margin-bottom: 0.3rem;
+}
 .card-text {
     color: var(--color-grey-standard);
-    font-family: sans-serif;
-    font-size: 0.5rem;
+    font-size: var(--font-size-small);
     margin-left: 1rem;
     margin-right: 1rem;
     transform-style: preserve-3d;
@@ -144,9 +156,8 @@ h3:hover {
 .red-link {
     margin-left: 1rem;
     text-decoration: none;
-    font-family: sans-serif;
     font-weight: bolder;
-    font-size: 1.1rem;
+    font-size: var(--font-size-large);
     transform-style: preserve-3d;
     transition: transform 0.3s ease;
 }
