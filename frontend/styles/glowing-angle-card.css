@@ -8,14 +8,16 @@
     --color-blue-standard: rgba(60,100,187,255);
     --color-grey-standard: rgba(202, 202, 202,255);
 
-    --font-size-huge: 1.3rem;
-    --font-size-large: 1.1rem;
-    --font-size-mid: 0.8rem;
-    --font-size-small: 0.6rem;
+    --font-size-huge: 1.9rem;
+    --font-size-large: 1.5rem;
+    --font-size-mid: 1.2rem;
+    --font-size-small: 0.8rem;
 
     --font-family: sans-serif;
 
 }
+
+
 
 body{
     display: grid;
@@ -24,6 +26,7 @@ body{
     font-family: var(--font-family)
     
 }
+
 
 
 .main-section {
@@ -37,16 +40,20 @@ body{
     perspective: 1000px;
 }
 
+
+
 h2 {
     color: var(--color-black-medium);
     text-align: center;
     font-size: var(--font-size-huge);
 }
 
+
+
 .blue-div, .red-div {
-    height: 15rem;
-    width: 10rem;
-    border-radius: 10px;
+    height: 22.5rem;
+    width: 15rem;
+    border-radius: 15px;
     backdrop-filter: blur(5px);
     overflow: hidden;
     background-color: var(--color-black-dark);
@@ -72,16 +79,18 @@ h2 {
                 0 0 40px 5px var(--color-red-standard);
 }
 
+
+
 .blue-date-div,
 .red-date-div {
     position: fixed;
     margin-left: 1rem;
     margin-top: 3rem;
     background-color: var(--color-black-dark);
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 4em;
+    height: 4rem;
     padding: 0.4rem;
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden;
     justify-items: left;
     transform-style: preserve-3d;
@@ -117,12 +126,16 @@ h2 {
     color: var(--color-red-standard)
 }
 
+
+
 img {
     height: 30%;
     width: 100%;
     object-fit: cover;
     border-top: 10px;
 }
+
+
 
 h3 {
     font-size: var(--font-size-large);
@@ -133,8 +146,11 @@ h3 {
     transform-style: preserve-3d;
     transition: transform 0.3s ease;
 }
+
+
+
 .card-text-section{
-    height: 4rem;
+    height: 7.5em;
     overflow: hidden;
     margin-bottom: 0.3rem;
 }
@@ -152,12 +168,14 @@ h3:hover {
     transform: translateX(1rem) translateY(-0.5rem) translateZ(2rem);
 }
 
+
+
 .blue-link, 
 .red-link {
     margin-left: 1rem;
     text-decoration: none;
     font-weight: bolder;
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-mid);
     transform-style: preserve-3d;
     transition: transform 0.3s ease;
 }
